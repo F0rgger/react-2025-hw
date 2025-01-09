@@ -9,8 +9,8 @@ const TodoComponents: FC = () => {
     useEffect(() => {
         const fetchTodos = async () => {
             const response = await fetch(import.meta.env.VITE_API_URL);
-            const data: ITodo[] = await response.json();
-            setTodos(data);
+            const data = await response.json();
+            setTodos(data.todos);
         };
 
         fetchTodos();
