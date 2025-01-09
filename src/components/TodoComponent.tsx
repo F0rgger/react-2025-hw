@@ -1,11 +1,11 @@
-import{FC} from 'react';
+import {FC} from 'react';
 import {ITodo} from "../models/ITodo.ts";
 
 interface TodoComponentProps {
     todo: ITodo;
 }
 
-const TodoComponent:FC<TodoComponentProps> = ({ todo }) => {
+const TodoComponent: FC<TodoComponentProps> = ({todo}) => {
     return (
         <div className={`todo-item ${todo.completed ? 'completed' : ''}`}>
             <h3>{todo.todo}</h3>

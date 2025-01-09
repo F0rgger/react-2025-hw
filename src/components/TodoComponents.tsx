@@ -19,7 +19,7 @@ const TodoComponents: FC = () => {
     return (
         <div className="todo-list">
             {todos.map(todo => (
-                <TodoComponent key={todo.id} todo={todo} />
+                <TodoComponent key={todo.id} todo={todo}/>
             ))}
         </div>
     );
