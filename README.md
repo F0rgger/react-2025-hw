@@ -24,6 +24,6 @@
 
 ### Task 2:
 
-- івно те саме що і task 2, але данні отримати з апі - https://dummyjson.com/todos
+- Рівно те саме що і task 2, але данні отримати з апі - https://dummyjson.com/todos
 ---
 
