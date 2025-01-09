@@ -1,19 +1,14 @@
 import {FC, useEffect, useState} from 'react';
 import TodoComponent from './TodoComponent';
 import {ITodo} from "../models/ITodo.ts";
+import {fetchTodos} from "../services/apiService.tsx";
 
 
 const TodoComponents: FC = () => {
     const [todos, setTodos] = useState<ITodo[]>([]);
 
     useEffect(() => {
-        const fetchTodos = async () => {
-            const response = await fetch(import.meta.env.VITE_API_URL);
-            const data: ITodo[] = await response.json();
-            setTodos(data);
-        };
-
-        fetchTodos();
+        fetchTodos().then(todos => setTodos(todos));
     }, []);
 
     return (
