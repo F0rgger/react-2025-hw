@@ -7,5 +7,5 @@ export const getUsers = async (page: string): Promise<IUser[]> => {
     const skip = limit * (+page) - limit;
     return await fetch(VITE_API_URL + '/users' + '?skip=' + skip)
         .then(response => response.json())
-        .then(data => data.todos);
+        .then(data => data.users);
 };
