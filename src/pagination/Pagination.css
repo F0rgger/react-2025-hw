@@ -1,0 +1,28 @@
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:disabled {
+    background-color: #dcdcdc;
+    cursor: not-allowed;
+}
+
+span {
+    font-size: 1.1em;
+    color: #333;
+}
